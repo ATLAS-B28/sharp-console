@@ -94,7 +94,7 @@ foreach (int item in inventory)
     Console.WriteLine($"Bin {bin} = {item} item (Running total at that time: {sum})");
 }
 Console.WriteLine($"We have {sum} items in inventory");
-Console.WriteLine($"Bin {bin} = {sum / bin}");*/
+Console.WriteLine($"Bin {bin} = {sum / bin}");
 
 string[] pallets = {"B14","A11","B12","A13"};
 Console.WriteLine("Sorted...");
@@ -126,4 +126,50 @@ Console.WriteLine($"After: {pallets[2].ToLower()}");
 foreach(var pallet in pallets) 
 {
     Console.WriteLine($" -- {pallet}");
+}
+
+//ToCharArray()
+string value = "abc123";
+char[] valArray = value.ToCharArray();
+foreach(var val in valArray) 
+{
+    Console.WriteLine(val);
+}
+//join
+string result = string.Join(" , ", valArray);
+Console.WriteLine(result);
+string[] items = result.Split(',');
+Console.WriteLine(items[0]);
+Console.WriteLine(items[1]);
+Console.WriteLine(items[2]);
+
+string pangram = "The quick brown fox jumps over lazy dog.";
+
+string[] message = pangram.Split(' ');
+
+string[] newMessage = new string[message.Length];
+
+for(int i = 0; i < message.Length; i++) 
+{
+    char[] letters = message[i].ToCharArray();
+    Array.Reverse(letters);
+    newMessage[i] = new string(letters);
+}
+
+string result2 = string.Join(" ", newMessage);
+Console.WriteLine(result2);*/
+
+string orderStream = "B123,C234,A345,C15,B177,G3003,C235,B179";
+string[] items = orderStream.Split(' ');
+Array.Sort(items);
+foreach(var item in items) 
+{
+    if(item.Length == 4) 
+    {
+        Console.WriteLine(item);
+    }
+    else 
+    {
+        Console.WriteLine(item);
+    }
 }

@@ -63,3 +63,4 @@ C:\Users\abhij\Desktop\Console\bin\Debug\net8.0\zh-CN\Humanizer.resources.dll
 C:\Users\abhij\Desktop\Console\bin\Debug\net8.0\zh-Hans\Humanizer.resources.dll
 C:\Users\abhij\Desktop\Console\bin\Debug\net8.0\zh-Hant\Humanizer.resources.dll
 C:\Users\abhij\Desktop\Console\obj\Debug\net8.0\Console.csproj.CopyComplete
+C:\Users\abhij\Desktop\Console\obj\Debug\net8.0\Console.sourcelink.json
